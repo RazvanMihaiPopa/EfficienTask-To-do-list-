@@ -43,9 +43,9 @@ Maybe you can mention me or this repo in the acknowledgements too
 <!-- Features -->
 ### :dart: Features
 
-- Add tasks
+- Add task
 - Mark task as done
-- Delete tasks
+- Delete task
 - Local storage, your todos are always saved, don't worry about refreshing the page
 - Delete all button
 - Mark all tasks as done button
