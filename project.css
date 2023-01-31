@@ -1,0 +1,176 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: rgb(167,0,241);
+    background: linear-gradient(90deg, rgba(167,0,241,1) 0%, rgba(107,0,215,1) 30%, rgba(0,255,244,1) 93%);
+    color: white;
+}
+
+
+.title {
+    font-size: 100px;
+    margin:0%;
+}
+
+header, form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button {
+    padding: 0.5rem;
+    padding-left: 1rem;
+    font-size: 1.8rem;
+    background: white;
+    border-radius: 10px;
+}
+
+form input {
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+    border: 2px solid white;
+}
+
+form button {
+    color: white;
+    background-color: rgb(167,0,241);
+    border:2px solid white;
+    justify-content: center;
+    cursor: pointer;
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+}
+
+.fa-circle-plus {
+    margin-top: 2px;
+    margin-right: 5px;
+    margin-left: -3px; 
+}
+
+.fa-check {
+    margin-right: 8px;
+}
+
+.fa-user-minus {
+    margin-right: 8px;
+}
+
+form button:hover {
+    background-color:rgba(107,0,215,1);
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    padding-left: 10px;
+    background: white;
+    color: black;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+.todo li {
+    flex: 1;
+}
+
+.delete-btn, .complete-btn {
+    background: transparent;
+    border: transparent;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.delete-btn {
+    color: rgba(107,0,215,1);
+}
+.delete-btn:hover {
+    color: rgb(167,0,241);
+}
+.complete-btn {
+    color: rgb(167,0,241);
+}
+.complete-btn:hover {
+    color: rgba(107,0,215,1);
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.selected {
+    color: white;
+    width: 3.2rem;
+    height: 3.2rem;
+    font-size:15px;
+    cursor: pointer;
+    border-radius: 10px;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+.deleted {
+    color: white;
+    width: 3.2rem;
+    height: 3.2rem;
+    font-size:15px;
+    cursor: pointer;
+}
+
+select {
+    border: none;
+    color: rgba(107,0,215,1);
+    width: 10rem;
+    height: 3.2rem;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+    height: 3.2rem;
+    border:2px solid white;
+    border-radius: 10px;
+}
+
+
+.select::after {
+    content: '✨';
+    position: absolute;
+    background:rgb(167,0,241);
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.select:hover::after {
+    background: rgba(107,0,215,1);
+}
+
+.elements {
+	width: 100%;
+	height: 15vh;
+	text-align: center;
+    margin:auto;
+    margin-top: 5px;
+}
